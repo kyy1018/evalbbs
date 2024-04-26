@@ -45,4 +45,10 @@ public class EvalBbsController {
 		return "detail";
 	}
 	
+	@RequestMapping("/delete")
+	public String delete(String bno) {
+		dao.delete(bno);
+		return "redirect:list";
+	}
+	
 }

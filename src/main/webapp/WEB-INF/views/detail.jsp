@@ -19,6 +19,6 @@
         <li>작성일자 : ${dto.regdate}</li>
     </ul>
 
-    <div><a href="delete">글 삭제하기</a></div>
+    <div><a href="delete?bno=${dto.bno}">글 삭제하기</a></div>
 </body>
 </html>

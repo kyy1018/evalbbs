@@ -8,4 +8,8 @@
 		SELECT * FROM evalbbs
 	</select>
 	
+	<insert id="write">
+		INSERT INTO evalbbs (title, content, writer, regdate) VALUES (#{title}, #{content}, #{writer}, #{regdate});
+	</insert>
+	
   </mapper>

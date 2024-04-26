@@ -11,6 +11,6 @@ import com.green.evalBbs.dto.EvalBbsDto;
 @Mapper
 public interface IEvalBbsDao {
 	public List<EvalBbsDto> getList();
-	public EvalBbsDto getDto();
+	public EvalBbsDto getDto(@Param("bno") String bno);
 	public void write(@Param("title") String title, @Param("content") String content, @Param("writer") String writer, @Param("regdate") Date regdate);
 }

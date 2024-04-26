@@ -12,7 +12,11 @@
     <h1>List Page</h1>
     <hr>
     <c:forEach var="dto" items="${list}">
-        ${dto.bno} / ${dto.title} / ${dto.content} / ${dto.writer} / ${dto.regdate}
+        ${dto.bno} / 
+        <a href="detail?bno=${dto.bno}">${dto.title} </a>/ 
+        ${dto.content} / 
+        ${dto.writer} / 
+        ${dto.regdate} <br>
     </c:forEach>
     <div><a href="writeForm">글 작성하기</a></div>
 </body>
